@@ -1,0 +1,36 @@
+package classesAuxiliares;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import modelos.Pericia;
+
+public class MapaDePericias {
+	public static Map<String, Pericia> getMapa() {
+		Map<String, Pericia> lista = new HashMap<>();
+		lista.put("Acrobacia", new Pericia("Acrobacia", "\tUm teste de Destreza (Acrobacia) abrange uma tentativa de permanecer de pé em uma situação complicada, como tentar correr sobre uma camada de gelo, equilibrar-se na corda bamba ou ficar de pé no convés de um navio que balança. O Mestre também pode pedir um teste de Destreza (Acrobacia) para ver se você é capaz de realizar acrobacias, como cambalhotas e saltos mortais.\n\n"));
+		lista.put("Adestrar Animais", new Pericia("Adestrar Animais", "\tQuando houver a necessidade de saber se você pode acalmar um animal domesticado, impedir uma montaria de se assustar, ou intuir as intenções de um animal, o Mestre pode pedir um teste de Sabedoria (Adestrar Animais). Você também realiza um teste de Sabedoria (Adestrar Animais) para controlar sua montaria ao tentar uma manobra arriscada.\n\n"));
+		lista.put("Arcanismo", new Pericia("Arcanismo", "\tUm teste de Inteligência (Arcanismo) mede conhecimento sobre magias, itens mágicos, símbolos sobrenaturais, tradições mágicas, os planos de existência e os habitantes desses planos.\n\n"));
+		lista.put("Atletismo", new Pericia("Atletismo", "\tUm teste de Força (Atletismo) abrange as situações difíceis que você encontra ao escalar, saltar ou nadar. Os exemplos incluem as seguintes atividades:\n" +
+				"\t*Você tenta escalar um penhasco natural ou escorregadio, evitar perigos enquanto escala uma parede, ou agarrar-se a uma superfície quando algo está tentando derrubá-lo.\n" +
+				"\t*Você tenta saltar uma distância excepcionalmente longa ou executar um salto em altura.\n" +
+				"\t*Você luta para nadar ou manter-se à tona em corredeiras traiçoeiras, ondas agitadas pela tempestade ou áreas com algas espessas. Ou outra criatura tenta empurrá-lo ou puxá-lo debaixo da água ou interferir de outra forma em sua natação.\n\n"));
+		lista.put("Atuação", new Pericia("Atuação", "\tUm teste de Carisma (Atuação) determina o quão bem você pode entreter uma plateia com música, dança, atuação, contando histórias ou alguma outra forma de entretenimento.\n\n"));
+		lista.put("Enganação", new Pericia("Enganação", "\tUm teste de Carisma (Enganação) determina se você pode esconder a verdade de forma convincente, verbalmente ou através de suas ações. Esse engano pode abranger tudo, como iludir os outros através de uma mentira cheia de ambiguidade. Situações típicas incluem tentar ludibriar um guarda, iludir um comerciante, ganhar dinheiro através de jogos de azar, usar um disfarce, amenizar as suspeitas de alguém com falsas garantias ou manter uma cara séria ao contar uma mentira descarada.\n\n"));
+		lista.put("Furtividade", new Pericia("Furtividade", "\tUm teste de Destreza (Furtividade) é realizado para tentar esconder-se de inimigos, esgueirar-se por guardas, escapar sem ser notado, ou aproximar-se de alguém sem ser visto ou ouvido.\n\n"));
+		lista.put("História", new Pericia("História", "\tUm teste de Inteligência (História) mede o conhecimento sobre eventos históricos, pessoas lendárias, reinos antigos, disputas passadas, guerras recentes e civilizações perdidas.\n\n"));
+		lista.put("Intimidação", new Pericia("Intimidação", "\tAo tentar influenciar alguém através de ameaças abertas, ações hostis e violência física, o Mestre pode pedir a realização de um teste de Carisma (Intimidação). Exemplos incluem tentar arrancar informações de um prisioneiro, convencer bandidos de rua a recuar de um confronto ou usar uma garrafa quebrada para convencer um vizir sarcástico a reconsiderar uma decisão.\n\n"));
+		lista.put("Intuição", new Pericia("Intuição", "\tUm teste de Sabedoria (Intuição) decide se você pode determinar as verdadeiras intenções de uma criatura, perceber uma mentira ou prever o próximo movimento de alguém. Fazer isso envolve recolher pistas a partir da linguagem corporal, os hábitos da fala e as mudanças nos maneirismos.\n\n"));
+		lista.put("Investigação", new Pericia("Investigação", "\tQuando você olha ao redor em busca de pistas e faz deduções com base nesses indícios, você realiza um teste de Inteligência (Investigação). Você pode deduzir a localização de um objeto escondido, discernir, a partir da aparência de um ferimento, que tipo de arma o causou, ou determinar o ponto mais fraco em um túnel que poderia causar o seu colapso. Debruçar-se sobre pergaminhos antigos em busca de um fragmento escondido de conhecimento também pode necessitar um teste de Inteligência (Investigação).\n\n"));
+		lista.put("Medicina", new Pericia("Medicina", "\tUm teste de Sabedoria (Medicina) permite tentar estabilizar um companheiro que está morrendo ou diagnosticar uma doença.\n\n"));
+		lista.put("Natureza", new Pericia("Natureza", "\tUm teste de Inteligência (Natureza) mede o conhecimento sobre terreno, plantas e animais, clima e ciclos naturais.\n\n"));
+		lista.put("Percepção", new Pericia("Percepção", "\tUm teste de Sabedoria (Percepção) permite observar, ouvir ou detectar a presença de alguma coisa de outra forma. A percepção mede a consciência geral do que está acontecendo ao seu redor e a acuidade de seus sentidos. Por exemplo, você pode tentar ouvir uma conversa através de uma porta fechada, bisbilhotar sob uma janela aberta ou ouvir monstros movendo-se furtivamente na floresta. Ou você pode tentar detectar coisas que são obscurecidas ou que normalmente passariam despercebidas, desde uma emboscada de orcs em uma estrada, bandidos escondidos nas sombras de um beco ou uma porta secreta fechada somente com a luz de velas.\n\n"));
+		lista.put("Persuasão", new Pericia("Persuasão", "\tQuando você tenta influenciar alguém ou um grupo de pessoas com tato, delicadeza ou boa índole, o Mestre pode pedir para você fazer de um teste de Carisma (Persuasão). Normalmente, você usa a Persuasão quando está agindo de boa-fé, para promover amizades, fazer pedidos cordiais ou exibir a etiqueta apropriada.\n" +
+				"\tExemplos de persuadir os outros incluem convencer um mordomo a deixar seu grupo ver o rei, negociar a paz entre duas tribos em conflito ou inspirar uma multidão de pessoas da cidade.\n\n"));
+		lista.put("Prestidigitação", new Pericia("Prestidigitação", "\tSempre que você tentar realizar um ato de prestidigitação ou de trapaça manual, como plantar alguma coisa em outra pessoa ou esconder um objeto em sua roupa, você deve fazer um teste de Destreza (Prestidigitação). O Mestre também pode pedir um teste de Destreza (Prestidigitação) para determinar se você pode roubar uma bolsa de moedas de outra pessoa ou pegar algo do bolso de outra pessoa.\n\n"));
+		lista.put("Religião", new Pericia("Religião", "\tUm teste de Inteligência (Religião) mede o conhecimento de lendas sobre divindades, rituais e orações, hierarquias religiosas, símbolos sagrados e práticas de cultos secretos.\n\n"));
+		lista.put("Sobrevivência", new Pericia("Sobrevivência", "\tUm teste de Sabedoria (Sobrevivência) é feito para seguir rastros, caçar, orientar o grupo através de terras congeladas, identificar sinais de que ursos-coruja vivem nas proximidades, prever o tempo, ou evitar areia movediça e outros perigos naturais.\n\n"));
+		return lista ;
+	}
+	
+}
