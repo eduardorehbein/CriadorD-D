@@ -10,18 +10,15 @@ public class Barbaro extends Classe {
 
 	@Override
 	public String toString() {
-		return "BÃ¡rbaro";
+		return "Bárbaro";
 	}
 	
 	@Override
-	protected void setTabela() {
-		// TODO Auto-generated method stub
-		
-	}
+	protected void setTabela() { }
 	
 	@Override
 	public void setEquipamentoInicial(Personagem personagem) {
-		//Relacionar com as proficiencias da classe
+		//TODO: Relacionar com as proficiencias da classe
 	}
 
 	@Override
@@ -41,31 +38,32 @@ public class Barbaro extends Classe {
 
 	@Override
 	protected void setHabilidades() {
-		super.habilidadesAdd(new Habilidade("FÃºria", "\tEm batalha, vocÃª luta com uma ferocidade primitiva. No seu turno, vocÃª pode entrar em fÃºria com uma aÃ§Ã£o bÃ´nus.\n" +
-				"\tEnquanto estiver em fÃºria, vocÃª recebe os seguintes benefÃ­cios se vocÃª nÃ£o estiver vestindo uma armadura pesada:\n" +
-				"\t* VocÃª tem vantagem em testes de ForÃ§a e testes de resistÃªncia de ForÃ§a\n" +
-				"\t* Quando vocÃª desferir um ataque com arma corpo-a-corpo usando ForÃ§a, vocÃª recebe um bÃ´nus nas jogadas de dano que aumenta Ã  medida que vocÃª adquire nÃ­veis de bÃ¡rbaro, como mostrado na coluna Dano de FÃºria na tabela O BÃ¡rbaro.\n" +
-				"\t* VocÃª possui resistÃªncia contra dano de concussÃ£o, cortante e perfurante.\n" +
-				"\tSe vocÃª for capaz de conjurar magias, vocÃª nÃ£o poderÃ¡ conjurÃ¡-las ou se concentrar nelas enquanto estiver em fÃºria.\n" +
-				"\tSua fÃºria dura por 1 minuto. Ela termina prematuramente se vocÃª cair inconsciente ou se seu turno acabar e vocÃª nÃ£o tiver atacado nenhuma criatura hostil desde seu Ãºltimo turno ou tiver sofrido dano nesse perÃ­odo. VocÃª tambÃ©m pode terminar sua fÃºria no seu turno com uma aÃ§Ã£o bÃ´nus.\n" +
-				"\tQuando vocÃª tiver usado a quantidade de fÃºrias mostrada para o seu nÃ­vel de bÃ¡rbaro na coluna FÃºrias da tabela O BÃ¡rbaro, vocÃª precisarÃ¡ terminar um descanso longo antes de poder entrar em fÃºria novamente.\n\n", 1));
-		super.habilidadesAdd(new Habilidade("Defesa sem armadura", "\tQuando vocÃª nÃ£o estiver vestindo qualquer armadura, sua Classe de Armadura serÃ¡ 10 + seu modificador de Destreza + seu modificador de ConstituiÃ§Ã£o. VocÃª pode usar um escudo e continuar a receber esse benefÃ­cio.\n\n", 1));
-		super.habilidadesAdd(new Habilidade("Ataque descuidado", "\tA partir do 2Â° nÃ­vel, vocÃª pode desistir de toda preocupaÃ§Ã£o com sua defesa para atacar com um desespero feroz. Quando vocÃª fizer o seu primeiro ataque no turno, vocÃª pode decidir atacar descuidadamente. Fazer isso lhe concede vantagem nas jogadas de ataque com armas corpo-a-corpo usando ForÃ§a durante seu turno, porÃ©m, as jogadas de ataques feitas contra vocÃª possuem vantagem atÃ© o inÃ­cio do seu prÃ³ximo turno.\n\n", 2));
-		super.habilidadesAdd(new Habilidade("Sentido de perigo", "\tNo 2Â° nÃ­vel, vocÃª adquire um sentido sobrenatural de quando as coisas prÃ³ximas nÃ£o estÃ£o como deveriam, concedendo a vocÃª uma chance maior quando estiver evitando perigos.\n" +
-				"\tVocÃª possui vantagem em testes de resistÃªncia de Destreza contra efeitos que vocÃª possa ver, como armadilhas e magias. Para receber esse benefÃ­cio vocÃª nÃ£o pode estar cego, surdo ou incapacitado.\n\n", 2));
-		super.habilidadesAdd(new Habilidade("Caminho primitivo", "\tNo 3Â° nÃ­vel, vocÃª escolhe um caminho que molda a natureza da sua fÃºria. Escolha o Caminho do Furioso ou o Caminho do Guerreiro TotÃªmico, ambos detalhados no final da descriÃ§Ã£o de classe. Sua escolha lhe concederÃ¡ caracterÃ­sticas no 3Â° nÃ­vel e novamente no 6Â°, 10Â° e 14Â° nÃ­veis.\n\n", 3));
-		super.habilidadesAdd(new Habilidade("Incremento no valor de habilidade", "\tQuando vocÃª atinge o 4Â° nÃ­vel e novamente no 8Â°, 12Â°, 16Â° e 19Â° nÃ­vel, vocÃª pode aumentar um valor de habilidade, Ã  sua escolha, em 2 ou vocÃª pode aumentar dois valores de habilidade, Ã  sua escolha em 1. Como padrÃ£o, vocÃª nÃ£o pode elevar um valor de habilidade acima de 20 com essa caracterÃ­stica.\n\n", 4));
-		super.habilidadesAdd(new Habilidade("Ataque extra", "\tA partir do 5Â° nÃ­vel, vocÃª pode atacar duas vezes, ao invÃ©s de uma, sempre que vocÃª realizar a aÃ§Ã£o de Ataque no seu turno.\n\n", 5));
-		super.habilidadesAdd(new Habilidade("Movimento rÃ¡pido", "\tComeÃ§ando no 5Â° nÃ­vel, seu deslocamento aumenta em 3 metros enquanto vocÃª nÃ£o estiver vestindo uma armadura pesada.\n\n", 5));
-		super.habilidadesAdd(new Habilidade("Instinto Selvagem", "\tNo 7Â° nÃ­vel, seu instinto estÃ¡ tÃ£o apurado que vocÃª recebe vantagem nas jogadas de iniciativa.\n" +
-				"\tAlÃ©m disso, se vocÃª estiver surpreso no comeÃ§o de um combate e nÃ£o estiver incapacitado, vocÃª pode agir normalmente no seu primeiro turno, mas apenas se vocÃª entrar em fÃºria antes de realizar qualquer outra coisa neste turno.\n\n", 7));
-		super.habilidadesAdd(new Habilidade("CrÃ­tico brutal", "\tA partir do 9Â° nÃ­vel, vocÃª pode rolar um dado de dano de arma adicional quando estiver determinando o dano extra de um acerto crÃ­tico com uma arma corpo-a-corpo.\n" +
-				"\tIsso aumenta para dois dados adicionais no 13Â° nÃ­vel e trÃªs dados adicionais no 17Â° nÃ­vel.\n\n", 9));
-		super.habilidadesAdd(new Habilidade("FÃºria implacavel", "\tA partir do 11Â° nÃ­vel, sua fÃºria pode manter vocÃª lutando independente da gravidade dos seus ferimentos. Se vocÃª cair para 0 pontos de vida enquanto estiver em fÃºria e nÃ£o morrer, vocÃª pode realizar um teste de resistÃªncia de ConstituiÃ§Ã£o CD 10. Se vocÃª for bem sucedido, vocÃª volta para 1 ponto de vida ao invÃ©s disso.\n" +
-				"\tCada vez que vocÃª utilizar essa caracterÃ­stica apÃ³s a primeira, a CD aumenta em 5. Assim que vocÃª terminar um descanso curto ou longo a CD volta para 10.\n\n", 11));
-		super.habilidadesAdd(new Habilidade("FÃºria persistente", "\tA partir do 15Â° nÃ­vel, sua fÃºria Ã© tÃ£o brutal que ela sÃ³ termina prematuramente se vocÃª cair inconsciente ou se vocÃª decidir terminÃ¡-la.\n\n", 15));
-		super.habilidadesAdd(new Habilidade("ForÃ§a indomÃ¡vel", "\tA partir do 18Â° nÃ­vel, se o total de um teste de ForÃ§a seu for menor que o seu valor de ForÃ§a, vocÃª pode usar esse valor no lugar do resultado.\n\n", 18));
-		super.habilidadesAdd(new Habilidade("CampeÃ£o primitivo", "\tNo 20Â° nÃ­vel, vocÃª incorpora os poderes da natureza. Seus valores de ForÃ§a e ConstituiÃ§Ã£o aumentam em 4. Seu mÃ¡ximo para esses valores agora Ã© 24.\n\n", 20));
+		//TODO: Extrair strings para um XML
+		super.habilidadesAdd(new Habilidade("Fúria", "\tEm batalha, você luta com uma ferocidade primitiva. No seu turno, você pode entrar em fúria com uma ação bônus.\n" +
+				"\tEnquanto estiver em fúria, você recebe os seguintes benefícios se você não estiver vestindo uma armadura pesada:\n" +
+				"\t* Você tem vantagem em testes de Força e testes de resistência de Força\n" +
+				"\t* Quando você desferir um ataque com arma corpo-a-corpo usando Força, você recebe um bônus nas jogadas de dano que aumenta à medida que você adquire níveis de bárbaro, como mostrado na coluna Dano de Fúria na tabela O Bárbaro.\n" +
+				"\t* Você possui resistência contra dano de concussão, cortante e perfurante.\n" +
+				"\tSe você for capaz de conjurar magias, você não poderá conjurá-las ou se concentrar nelas enquanto estiver em fúria.\n" +
+				"\tSua fúria dura por 1 minuto. Ela termina prematuramente se você cair inconsciente ou se seu turno acabar e você não tiver atacado nenhuma criatura hostil desde seu último turno ou tiver sofrido dano nesse período. Você também pode terminar sua fúria no seu turno com uma ação bônus.\n" +
+				"\tQuando você tiver usado a quantidade de fúrias mostrada para o seu nível de bárbaro na coluna Fúrias da tabela O Bárbaro, você precisará terminar um descanso longo antes de poder entrar em fúria novamente.\n\n", 1));
+		super.habilidadesAdd(new Habilidade("Defesa sem armadura", "\tQuando você não estiver vestindo qualquer armadura, sua Classe de Armadura será 10 + seu modificador de Destreza + seu modificador de Constituição. Você pode usar um escudo e continuar a receber esse benefício.\n\n", 1));
+		super.habilidadesAdd(new Habilidade("Ataque descuidado", "\tA partir do 2° nível, você pode desistir de toda preocupação com sua defesa para atacar com um desespero feroz. Quando você fizer o seu primeiro ataque no turno, você pode decidir atacar descuidadamente. Fazer isso lhe concede vantagem nas jogadas de ataque com armas corpo-a-corpo usando Força durante seu turno, porém, as jogadas de ataques feitas contra você possuem vantagem até o início do seu próximo turno.\n\n", 2));
+		super.habilidadesAdd(new Habilidade("Sentido de perigo", "\tNo 2° nível, você adquire um sentido sobrenatural de quando as coisas próximas não estão como deveriam, concedendo a você uma chance maior quando estiver evitando perigos.\n" +
+				"\tVocê possui vantagem em testes de resistência de Destreza contra efeitos que você possa ver, como armadilhas e magias. Para receber esse benefício você não pode estar cego, surdo ou incapacitado.\n\n", 2));
+		super.habilidadesAdd(new Habilidade("Caminho primitivo", "\tNo 3° nível, você escolhe um caminho que molda a natureza da sua fúria. Escolha o Caminho do Furioso ou o Caminho do Guerreiro Totêmico, ambos detalhados no final da descrição de classe. Sua escolha lhe concederá características no 3° nível e novamente no 6°, 10° e 14° níveis.\n\n", 3));
+		super.habilidadesAdd(new Habilidade("Incremento no valor de habilidade", "\tQuando você atinge o 4° nível e novamente no 8°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.\n\n", 4));
+		super.habilidadesAdd(new Habilidade("Ataque extra", "\tA partir do 5° nível, você pode atacar duas vezes, ao invés de uma, sempre que você realizar a ação de Ataque no seu turno.\n\n", 5));
+		super.habilidadesAdd(new Habilidade("Movimento rápido", "\tComeçando no 5° nível, seu deslocamento aumenta em 3 metros enquanto você não estiver vestindo uma armadura pesada.\n\n", 5));
+		super.habilidadesAdd(new Habilidade("Instinto Selvagem", "\tNo 7° nível, seu instinto está tão apurado que você recebe vantagem nas jogadas de iniciativa.\n" +
+				"\tAlém disso, se você estiver surpreso no começo de um combate e não estiver incapacitado, você pode agir normalmente no seu primeiro turno, mas apenas se você entrar em fúria antes de realizar qualquer outra coisa neste turno.\n\n", 7));
+		super.habilidadesAdd(new Habilidade("Crítico brutal", "\tA partir do 9° nível, você pode rolar um dado de dano de arma adicional quando estiver determinando o dano extra de um acerto crítico com uma arma corpo-a-corpo.\n" +
+				"\tIsso aumenta para dois dados adicionais no 13° nível e três dados adicionais no 17° nível.\n\n", 9));
+		super.habilidadesAdd(new Habilidade("Fúria implacavel", "\tA partir do 11° nível, sua fúria pode manter você lutando independente da gravidade dos seus ferimentos. Se você cair para 0 pontos de vida enquanto estiver em fúria e não morrer, você pode realizar um teste de resistência de Constituição CD 10. Se você for bem sucedido, você volta para 1 ponto de vida ao invés disso.\n" +
+				"\tCada vez que você utilizar essa característica após a primeira, a CD aumenta em 5. Assim que você terminar um descanso curto ou longo a CD volta para 10.\n\n", 11));
+		super.habilidadesAdd(new Habilidade("Fúria persistente", "\tA partir do 15° nível, sua fúria é tão brutal que ela só termina prematuramente se você cair inconsciente ou se você decidir terminá-la.\n\n", 15));
+		super.habilidadesAdd(new Habilidade("Força indomável", "\tA partir do 18° nível, se o total de um teste de Força seu for menor que o seu valor de Força, você pode usar esse valor no lugar do resultado.\n\n", 18));
+		super.habilidadesAdd(new Habilidade("Campeão primitivo", "\tNo 20° nível, você incorpora os poderes da natureza. Seus valores de Força e Constituição aumentam em 4. Seu máximo para esses valores agora é 24.\n\n", 20));
 	}
 	
 	@Override

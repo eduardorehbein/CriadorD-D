@@ -21,15 +21,10 @@ public class Mago extends Classe implements Magica{
 	}
 	
 	@Override
-	protected void setTabela() {
-		// TODO Auto-generated method stub
-		
-	}
+	protected void setTabela() {}
 
 	@Override
-	public void setEquipamentoInicial(Personagem personagem) {
-		// TODO Auto-generated method stub
-	}
+	public void setEquipamentoInicial(Personagem personagem) {}
 
 	@Override
 	protected void setPvInicial(Personagem personagem) {
@@ -48,6 +43,7 @@ public class Mago extends Classe implements Magica{
 
 	@Override
 	protected void setHabilidades() {
+		//TODO: Extrair strings para um XML
 		super.habilidadesAdd(new Habilidade("Conjuração", "\tComo um estudante da magia arcana, você possui um livro de magias (ou grimório) que revela os primeiros vislumbres de seu verdadeiro poder. Consulte o capítulo 10 para as regras gerais sobre conjuração de magias e o capítulo 11 para conferir a lista de magias de mago.\n" + 
 				"\tTruques: A partir do 1º nível, você conhece três truques à sua escolha da lista de magias de mago. Você aprende truques adicionais conforme avança de nível, como mostra a coluna Truques Conhecidos na tabela O Mago.\n" +
 				"\tGrimório: No 1º nível, você possui um grimório contendo seis magias de mago de 1º nível, à sua escolha. Um grimório não contém truques.\n" +
@@ -79,10 +75,7 @@ public class Mago extends Classe implements Magica{
 	}
 
 	@Override
-	public void addMagiasAoBau(Personagem personagem) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void addMagiasAoBau(Personagem personagem) {}
 
 	public Caminho<Mago> getCaminho() {
 		return caminho;

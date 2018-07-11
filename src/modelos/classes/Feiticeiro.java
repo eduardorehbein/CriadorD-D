@@ -21,10 +21,7 @@ public class Feiticeiro extends Classe implements Magica{
 	}
 
 	@Override
-	protected void setTabela() {
-		// TODO Auto-generated method stub
-		
-	}
+	protected void setTabela() {}
 	
 	@Override
 	public void setEquipamentoInicial(Personagem personagem) {
@@ -48,6 +45,7 @@ public class Feiticeiro extends Classe implements Magica{
 
 	@Override
 	protected void setHabilidades() {
+		//TODO: Extrair strings para um XML
 		super.habilidadesAdd(new Habilidade("Conjuração", "\tUm evento do seu passado ou na vida de um parente ou ancestral, deixou uma marca indelével em você, infundindo você com magia arcana. A fonte desse poder, independente da sua origem, flui em suas magias. Veja o capítulo 10 para as regras gerais de conjuração e o capítulo 11 para a lista de magias de feiticeiro.\n" +
 				"\tTruques: Você conhece quatro truques, à sua escolha, da lista de magias de feiticeiro. Você aprende truques de feiticeiro adicionais, à sua escolha, em níveis mais altos, como mostrado na coluna Truques Conhecidos da tabela O Feiticeiro.\n" +
 				"\tEspaços de Magia: A tabela O Feiticeiro mostra quantos espaços de magia de 1° nível e superiores você possui disponíveis para conjuração. Para conjurar uma dessas magias, você deve gastar uma espaço de magia do nível da magia ou superior. Você recobra todos os espaços de magia gastos quando você completa um descanso longo. Por exemplo, se você quiser conjurar a magia de 1° nível mãos flamejantes e você tiver um espaço de magia de 1° nível e um de 2° nível disponíveis, você poderá conjurar mãos flamejantes usando qualquer dos dois espaços.\n" +
@@ -84,10 +82,7 @@ public class Feiticeiro extends Classe implements Magica{
 	}
 	
 	@Override
-	public void addMagiasAoBau(Personagem personagem) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void addMagiasAoBau(Personagem personagem) {}
 	
 	@Override
 	protected void setRiquezaInicial(Personagem personagem) {

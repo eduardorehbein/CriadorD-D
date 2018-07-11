@@ -21,15 +21,10 @@ public class Patrulheiro extends Classe implements Magica{
 	}
 
 	@Override
-	void setTabela() {
-		// TODO Auto-generated method stub
-		
-	}
+	void setTabela() {}
 	
 	@Override
-	public void setEquipamentoInicial(Personagem personagem) {
-		// TODO Auto-generated method stub
-	}
+	public void setEquipamentoInicial(Personagem personagem) {}
 
 	@Override
 	protected void setPvInicial(Personagem personagem) {
@@ -48,6 +43,7 @@ public class Patrulheiro extends Classe implements Magica{
 
 	@Override
 	protected void setHabilidades() {
+		//TODO: Extrair strings para um XML
 		super.habilidadesAdd(new Habilidade("Inimigo favorito", "\tA partir do 1° nível, você tem experiência significativa estudando, rastreando, caçando e, até mesmo, falando com certos tipos de inimigos.\n" +
 				"\tEscolha um tipo de inimigo favorito: aberrações, bestas, celestiais, constructos, corruptores, dragões, elementais, fadas, gigantes, limos, monstruosidades, mortos-vivos ou plantas. Alternativamente, você pode escolher duas raças de humanoides (como gnolls e orcs) para seus inimigos favoritos.\n" +
 				"\tVocê tem vantagem nas jogadas de ataque, em testes de Sabedoria (Sobrevivência) para rastrear seus inimigos favoritos, assim como em testes de Inteligência para lembrar informações sobre eles.\n" +
@@ -94,10 +90,7 @@ public class Patrulheiro extends Classe implements Magica{
 	}
 	
 	@Override
-	public void addMagiasAoBau(Personagem personagem) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void addMagiasAoBau(Personagem personagem) {}
 
 	public Caminho<Patrulheiro> getCaminho() {
 		return caminho;

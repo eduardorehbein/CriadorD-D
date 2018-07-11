@@ -14,15 +14,10 @@ public class Ladino extends Classe {
 	}
 
 	@Override
-	protected void setTabela() {
-		// TODO Auto-generated method stub
-		
-	}
+	protected void setTabela() {}
 	
 	@Override
-	public void setEquipamentoInicial(Personagem personagem) {
-		// TODO Auto-generated method stub
-	}
+	public void setEquipamentoInicial(Personagem personagem) {}
 
 	@Override
 	protected void setPvInicial(Personagem personagem) {
@@ -41,6 +36,7 @@ public class Ladino extends Classe {
 
 	@Override
 	protected void setHabilidades() {
+		//TODO: Extrair strings para um XML
 		super.habilidadesAdd(new Habilidade("Especialização", "\tNo 1º nível, você escolhe duas de suas perícias que seja proficiente, ou uma perícia que seja proficiente e ferramentas de ladrão. Seu bônus de proficiência é dobrado em qualquer teste de habilidade que fizer com elas.\n" +
 				"\tNo 6º nível, você pode escolher outras duas de suas proficiências (em perícias ou ferramentas de ladrão) para ganhar esse benefício.\n\n", 1));
 		super.habilidadesAdd(new Habilidade("Ataque furtivo", "\tA partir do 1º nível, você sabe como atacar sutilmente e explorar a distração de seus inimigos. Uma vez por turno, você pode adicionar 1d6 nas jogadas de dano contra qualquer criatura que acertar, desde que tenha vantagem nas jogadas de ataque. O ataque deve ser com uma arma de acuidade ou à distância.\n" +

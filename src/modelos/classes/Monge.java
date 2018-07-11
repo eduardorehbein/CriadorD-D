@@ -14,15 +14,10 @@ public class Monge extends Classe {
 	}
 	
 	@Override
-	protected void setTabela() {
-		// TODO Auto-generated method stub
-		
-	}
+	protected void setTabela() {}
 		
 	@Override
-	public void setEquipamentoInicial(Personagem personagem) {
-		// TODO Auto-generated method stub
-	}
+	public void setEquipamentoInicial(Personagem personagem) {}
 
 	@Override
 	public void setPvInicial(Personagem personagem) {
@@ -41,6 +36,7 @@ public class Monge extends Classe {
 
 	@Override
 	public void setHabilidades() {
+		//TODO: Extrair strings para um XML
 		super.habilidadesAdd(new Habilidade("Defesa sem armadura", "\tA partir do 1° nível, quando você não estiver vestindo nenhuma armadura nem empunhando um escudo, sua Classe de Armadura será 10 + seu modificador de Destreza + seu modificador de Sabedoria.\n\n", 1));
 		super.habilidadesAdd(new Habilidade("Artes marciais", "\tNo 1° nível, sua pratica nas artes marciais concede a você maestria nos estilos de combate que utilizam golpes desarmados e armas de monge, que são as espadas curtas e quaisquer armas simples corpo-a-corpo que não tenham a propriedade duas mãos ou pesada.\n" +
 				"\tVocê ganha os seguintes benefícios enquanto estiver desarmado ou empunhando uma arma de monge e não estiver vestindo nenhuma armadura ou empunhando um escudo:\n" +
