@@ -1,1 +1,12 @@
-CriadorD&D
+<h1>CriadorD&D</h1>
+
+<h3>PT:</h3>
+
+  <p>Este projeto foi iniciado em 2016. Nessa época, eu (Eduardo) estava aprendendo a programar na linguagem Java e queria aplicar os conhecimentos obtidos num projeto pessoal. Após pensar um pouco a respeito do que eu iria fazer, lembrei das sessões de RPG (D&D) que jogava com os amigos e da dificuldade que era montar fichas de personagem para as sessões, principalmente quando isso era feito de última hora. Essa dificuldade se devia principalmente pelo fato de que nunca lembrávamos de todas as características, habilidades e valores atribuídos a cada raça e classe possível de serem utilizadas pelo jogador. Portanto, eu tinha um problema a resolver, algo que pudesse ser a ideia base de um projeto.</p>
+  <p>Primeiramente, defini qual versão dos livros de D&D formaria a base de todas as características aplicadas ao programa, escolhi a versão 5.0 do sistema. Após isso, comecei a desenvolver o que seria a estrutura do código interno do programa, principalmente como iria separar as características mais importantes dos personagens, raça, classe, magias, caminhos, etc. Na parte de interface com o usuário, parti para algo que auxiliasse o jogador a ter em mãos todas as informações que ele necessitasse para criar seu personagem num lugar só, evitando aquele problema clássico dos livros de D&D relacionado ao fato de que as informações sempre estão muito espalhadas e não são tão simples de se achar. Uma coisa importante a ser frisada, é que uma das premissas desse projeto era também permitir que o jogador focasse mais no que seria o seu personagem em si, suas características, habilidades e história. Por isso, sempre que possível (e que eu lembrasse), eu tentava abstrair a parte de números e dados a serem rolados para definir os valores de atributos gerados de acordo com cada característica do personagem escolhida pelo jogador.</p>
+  <p>Não trabalhei por muito tempo nesse projeto, mas apesar de ele ter ficado incompleto na época, aprendi muita coisa de programação com ele, que era o objetivo de eu ter feito um projeto pessoal até então. Agora, deixo aqui o código já escrito e algumas ideias que já estavam sendo implementadas, iam ser implementadas, ou ainda, deveriam mudar coisas que já foram implementadas, para então terminar o que comecei. Sinta-se livre para resolvê-las, melhorá-las, e principalmente, dar ideias novas para alcançar a premissa do projeto de uma forma ainda melhor. Ficarei de olho nas pull-requests e nas mensagens a respeito do projeto.</p>
+  
+  <p>Agradeço desde já, 
+  Eduardo.</p>
+  
+<h3>EN:</h3>
