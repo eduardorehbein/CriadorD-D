@@ -7,6 +7,7 @@ import modelos.Personagem;
 import modelos.classes.caminhos.Caminho;
 
 public class Bardo extends Classe implements Magica{
+	//TODO: Corrigir strings defeituosas
 	private Caminho<Bardo> caminho;
 
 	@Override
@@ -21,14 +22,11 @@ public class Bardo extends Classe implements Magica{
 	}
 	
 	@Override
-	protected void setTabela() {
-		// TODO Auto-generated method stub
-		
-	}
+	protected void setTabela() { }
 	
 	@Override
 	public void setEquipamentoInicial(Personagem personagem) {
-		// Relacionar com as proficiencias da classe
+		//TODO: Relacionar com as proficiencias da classe
 	}
 
 	@Override
@@ -48,32 +46,33 @@ public class Bardo extends Classe implements Magica{
 
 	@Override
 	protected void setHabilidades() {
-		super.habilidadesAdd(new Habilidade("Conjuração", "\tVocê aprendeu a desembaraçar e remodelar o decido da realidade em harmonia com os seus desejos e música. Suas magias são parte do seu vasto repertório, magia que você pode entoar em diferentes situações. Veja o capítulo 10 para as regras gerais de conjuração e o capítulo 11 para a lista de magias de bardo.\n" +
-				"\tTruques: Você conhece dois truques, à sua escolha da lista de magias de bardo. Você aprende truques de bardo adicionais, à sua escolha em níveis mais altos, como mostrado na coluna Truques Conhecidos da tabela O Bardo.\n" +
-				"\tEspaços de Magia: A tabela O Bardo mostra quantos espaços de magia de 1° nível e superiores você possui disponíveis para conjuração. Para conjurar uma dessas magias, você deve gastar uma espaço de magia do nível da magia ou superior. Você recobra todos os espaços de magia gastos quando você completa um descanso longo. Por exemplo, se você quiser conjurar a magia de 1° nível curar ferimentos e você tiver um espaço de magia de 1° nível e um de 2° nível disponíveis, você poderá conjurar curar ferimentos usando qualquer dos dois espaços.\n" +
-				"\tMagias Conhecidas de 1º Nível e Superiores: Você conhece quatro magias de 1° nível, à sua escolha, da lista de magias de bardo. A coluna Magias Conhecidas na tabela O Bardo mostra quando você aprende mais magias de bardo, à sua escolha. Cada uma dessas magias deve ser de um nível a que você tenha acesso, como mostrado na tabela. Por exemplo, quando você alcança o 3° nível da classe, você pode aprender uma nova magia de 1° ou 2° nível. Além disso, quando você adquire um nível nessa classe, você pode escolher uma magia de bardo que você conheça e substituí-la por outra magia da lista de magias de bardo, que também deve ser de um nível ao qual você tenha espaços de magia.\n" +
-				"\tHabilidade de Conjuração: Sua habilidade de conjuração é Carisma para suas magias de bardo, portanto, você usa seu Carisma sempre que alguma magia se referir à sua habilidade de conjurar magias. Além disso, você usa o seu modificador de Carisma para definir a CD dos testes de resistência para as magias de bardo que você conjura e quando você realiza uma jogada de ataque com uma magia.\n" +
-				"\tCD para suas magias = 8 + bônus de proficiência + seu modificador de Carisma\n" +
-				"\tModificador de ataque de magia = seu bônus de proficiência + seu modificador de Carisma\n" +
-				"\tConjuração de Ritual: Você pode conjurar qualquer magia de bardo que você conheça como um ritual se ela possuir o descritor ritual.\n" +
-				"\tFoco de Conjuração: Você pode usar um instrumento musical (encontrado no capítulo 5) como foco de conjuração das suas magias de bardo.\n\n", 1));
-		super.habilidadesAdd(new Habilidade("Inspiração de bardo", "\tVocê pode inspirar os outros através de palavras animadoras ou música. Para tanto, você usa uma ação bônus no seu turno para escolher uma outra criatura, que não seja você mesmo, a até 18 metros de você que possa ouvi-lo. Essa criatura ganha um dado de Inspiração de Bardo, um d6.\n" +
-				"\tUma vez, nos próximos 10 minutos, a criatura poderá rolar o dado e adicionar o valor rolado a um teste de habilidade, jogada de ataque ou teste de resistência que ela fizer. A criatura pode esperar até rolar o d20 antes de decidir usar o dado de Inspiração de Bardo, mas deve decidir antes do Mestre dizer se a rolagem foi bem ou mal sucedida. Quando o dado de Inspiração de Bardo for rolado, ele é gasto. Uma criatura pode ter apenas um dado de Inspiração de Bardo por vez.\n" +
-				"\tVocê pode usar essa característica um número de vezes igual ao seu modificador de Carisma (no mínimo uma vez). Você recupera todos os usos quando termina um descanso longo.\n" +
-				"\tSeu dado de Inspiração de Bardo muda quando você atinge certos níveis na classe. O dado se torna um d8 no 5° nível, um d10 no 10° nível e um d12 no 15° nível.\n\n", 1));
-		super.habilidadesAdd(new Habilidade("Versatilidade", "\tA partir do 2° nível, você pode adicionar metade do seu bônus de proficiência, arredondado para baixo, em qualquer teste de habilidade que você fizer que ainda não possua seu bônus de proficiência.\n\n", 2));
-		super.habilidadesAdd(new Habilidade("Canção de descanso", "\tA partir do 2° nível, você pode usar música ou oração calmantes para ajudar a revitalizar seus aliados feridos durante um descanso curto. Se você ou qualquer criatura amigável que puder ouvir sua atuação recuperar pontos de vida no fim do descanso curto ao gastar um ou mais Dados de Vida, cada uma dessas criaturas recupera 1d6 pontos de vida adicionais.\n" +
-				"\tOs pontos de vida adicionais aumentam quando você alcança determinados níveis na classe: para 1d8 no 9° nível, para 1d10 no 13° nível e para 1d12 no 17° nível.\n\n", 2));
-		super.habilidadesAdd(new Habilidade("Colégio de bardo", "\tNo 3° nível, você investiga as técnicas avançadas de um colégio de bardo, à sua escolha: o Colégio do Conhecimento ou o Colégio da Bravura, ambos detalhados no final da descrição da classe. Sua escolha lhe concede características no 3° nível e novamente no 6° e 14° nível.\n\n", 3));
-		super.habilidadesAdd(new Habilidade("Aptidão", "\tNo 3° nível, escolha duas das perícias em que você é proficiente. Seu bônus de proficiência é dobrado em qualquer teste de habilidade que você fizer que utilize qualquer das perícias escolhidas.\n" +
-				"\tNo 10° nível, você escolhe mais duas perícias em que é proficiente para ganhar esse benefício.\n\n", 3));
-		super.habilidadesAdd(new Habilidade("Incremento no valor de habilidade", "\tQuando você atinge o 4° nível e novamente no 8°, 12°, 16° e 19° nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha, em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.\n\n", 4));
-		super.habilidadesAdd(new Habilidade("Fonte de inspiração", "\tComeçando no momento em que você atinge o 5° nível, você recupera todos as utilizações gastas da sua Inspiração de Bardo quando você termina um descanso curto ou longo.\n\n", 5));
-		super.habilidadesAdd(new Habilidade("Canção de proteção", "\tNo 6° nível, você adquire a habilidade de usar notas musicais ou palavras de poder para interromper efeito de influência mental. Com uma ação, você pode começar uma atuação que dura até o fim do seu próximo turno. Durante esse tempo, você e qualquer criatura amigável a até 9 metros de você terá vantagem em testes de resistência para não ser amedrontado ou enfeitiçado. Uma criatura deve ser capaz de ouvir você para receber esse benefício. A atuação termina prematuramente se você for incapacitado ou silenciado ou se você terminá-la voluntariamente (não requer ação).\n\n", 6));
-		super.habilidadesAdd(new Habilidade("Segredos mágicos", "\tNo 10° nível, você usurpou conhecimento mágico de um vasto espectro de disciplinas. Escolha duas magias de qualquer classe, incluindo essa. A magia que você escolher deve ser de um nível que você possa conjurar, como mostrado na tabela O Bardo, ou um truque.\n" +
-				"\tAs magias escolhidas contam como magias de bardo para você e já estão incluídas no número da coluna Magias Conhecidas da tabela O Bardo.\n" +
-				"\tVocê aprende duas magias adicionais de qualquer classe no 14° nível e novamente no 18° nível.\n\n", 10));
-		super.habilidadesAdd(new Habilidade("Inspiração superior", "\tNo 20° nível, quando você rolar iniciativa e não tiver nenhum uso restante de Inspiração de Bardo, você recupera um uso.\n\n", 20));
+		//TODO: Extrair strings para um XML
+		super.habilidadesAdd(new Habilidade("Conjura??o", "\tVoc? aprendeu a desembara?ar e remodelar o decido da realidade em harmonia com os seus desejos e m?sica. Suas magias s?o parte do seu vasto repert?rio, magia que voc? pode entoar em diferentes situa??es. Veja o cap?tulo 10 para as regras gerais de conjura??o e o cap?tulo 11 para a lista de magias de bardo.\n" +
+				"\tTruques: Voc? conhece dois truques, ? sua escolha da lista de magias de bardo. Voc? aprende truques de bardo adicionais, ? sua escolha em n?veis mais altos, como mostrado na coluna Truques Conhecidos da tabela O Bardo.\n" +
+				"\tEspa?os de Magia: A tabela O Bardo mostra quantos espa?os de magia de 1? n?vel e superiores voc? possui dispon?veis para conjura??o. Para conjurar uma dessas magias, voc? deve gastar uma espa?o de magia do n?vel da magia ou superior. Voc? recobra todos os espa?os de magia gastos quando voc? completa um descanso longo. Por exemplo, se voc? quiser conjurar a magia de 1? n?vel curar ferimentos e voc? tiver um espa?o de magia de 1? n?vel e um de 2? n?vel dispon?veis, voc? poder? conjurar curar ferimentos usando qualquer dos dois espa?os.\n" +
+				"\tMagias Conhecidas de 1? N?vel e Superiores: Voc? conhece quatro magias de 1? n?vel, ? sua escolha, da lista de magias de bardo. A coluna Magias Conhecidas na tabela O Bardo mostra quando voc? aprende mais magias de bardo, ? sua escolha. Cada uma dessas magias deve ser de um n?vel a que voc? tenha acesso, como mostrado na tabela. Por exemplo, quando voc? alcan?a o 3? n?vel da classe, voc? pode aprender uma nova magia de 1? ou 2? n?vel. Al?m disso, quando voc? adquire um n?vel nessa classe, voc? pode escolher uma magia de bardo que voc? conhe?a e substitu?-la por outra magia da lista de magias de bardo, que tamb?m deve ser de um n?vel ao qual voc? tenha espa?os de magia.\n" +
+				"\tHabilidade de Conjura??o: Sua habilidade de conjura??o ? Carisma para suas magias de bardo, portanto, voc? usa seu Carisma sempre que alguma magia se referir ? sua habilidade de conjurar magias. Al?m disso, voc? usa o seu modificador de Carisma para definir a CD dos testes de resist?ncia para as magias de bardo que voc? conjura e quando voc? realiza uma jogada de ataque com uma magia.\n" +
+				"\tCD para suas magias = 8 + b?nus de profici?ncia + seu modificador de Carisma\n" +
+				"\tModificador de ataque de magia = seu b?nus de profici?ncia + seu modificador de Carisma\n" +
+				"\tConjura??o de Ritual: Voc? pode conjurar qualquer magia de bardo que voc? conhe?a como um ritual se ela possuir o descritor ritual.\n" +
+				"\tFoco de Conjura??o: Voc? pode usar um instrumento musical (encontrado no cap?tulo 5) como foco de conjura??o das suas magias de bardo.\n\n", 1));
+		super.habilidadesAdd(new Habilidade("Inspira??o de bardo", "\tVoc? pode inspirar os outros atrav?s de palavras animadoras ou m?sica. Para tanto, voc? usa uma a??o b?nus no seu turno para escolher uma outra criatura, que n?o seja voc? mesmo, a at? 18 metros de voc? que possa ouvi-lo. Essa criatura ganha um dado de Inspira??o de Bardo, um d6.\n" +
+				"\tUma vez, nos pr?ximos 10 minutos, a criatura poder? rolar o dado e adicionar o valor rolado a um teste de habilidade, jogada de ataque ou teste de resist?ncia que ela fizer. A criatura pode esperar at? rolar o d20 antes de decidir usar o dado de Inspira??o de Bardo, mas deve decidir antes do Mestre dizer se a rolagem foi bem ou mal sucedida. Quando o dado de Inspira??o de Bardo for rolado, ele ? gasto. Uma criatura pode ter apenas um dado de Inspira??o de Bardo por vez.\n" +
+				"\tVoc? pode usar essa caracter?stica um n?mero de vezes igual ao seu modificador de Carisma (no m?nimo uma vez). Voc? recupera todos os usos quando termina um descanso longo.\n" +
+				"\tSeu dado de Inspira??o de Bardo muda quando voc? atinge certos n?veis na classe. O dado se torna um d8 no 5? n?vel, um d10 no 10? n?vel e um d12 no 15? n?vel.\n\n", 1));
+		super.habilidadesAdd(new Habilidade("Versatilidade", "\tA partir do 2? n?vel, voc? pode adicionar metade do seu b?nus de profici?ncia, arredondado para baixo, em qualquer teste de habilidade que voc? fizer que ainda n?o possua seu b?nus de profici?ncia.\n\n", 2));
+		super.habilidadesAdd(new Habilidade("Can??o de descanso", "\tA partir do 2? n?vel, voc? pode usar m?sica ou ora??o calmantes para ajudar a revitalizar seus aliados feridos durante um descanso curto. Se voc? ou qualquer criatura amig?vel que puder ouvir sua atua??o recuperar pontos de vida no fim do descanso curto ao gastar um ou mais Dados de Vida, cada uma dessas criaturas recupera 1d6 pontos de vida adicionais.\n" +
+				"\tOs pontos de vida adicionais aumentam quando voc? alcan?a determinados n?veis na classe: para 1d8 no 9? n?vel, para 1d10 no 13? n?vel e para 1d12 no 17? n?vel.\n\n", 2));
+		super.habilidadesAdd(new Habilidade("Col?gio de bardo", "\tNo 3? n?vel, voc? investiga as t?cnicas avan?adas de um col?gio de bardo, ? sua escolha: o Col?gio do Conhecimento ou o Col?gio da Bravura, ambos detalhados no final da descri??o da classe. Sua escolha lhe concede caracter?sticas no 3? n?vel e novamente no 6? e 14? n?vel.\n\n", 3));
+		super.habilidadesAdd(new Habilidade("Aptid?o", "\tNo 3? n?vel, escolha duas das per?cias em que voc? ? proficiente. Seu b?nus de profici?ncia ? dobrado em qualquer teste de habilidade que voc? fizer que utilize qualquer das per?cias escolhidas.\n" +
+				"\tNo 10? n?vel, voc? escolhe mais duas per?cias em que ? proficiente para ganhar esse benef?cio.\n\n", 3));
+		super.habilidadesAdd(new Habilidade("Incremento no valor de habilidade", "\tQuando voc? atinge o 4? n?vel e novamente no 8?, 12?, 16? e 19? n?vel, voc? pode aumentar um valor de habilidade, ? sua escolha, em 2 ou voc? pode aumentar dois valores de habilidade, ? sua escolha, em 1. Como padr?o, voc? n?o pode elevar um valor de habilidade acima de 20 com essa caracter?stica.\n\n", 4));
+		super.habilidadesAdd(new Habilidade("Fonte de inspira??o", "\tCome?ando no momento em que voc? atinge o 5? n?vel, voc? recupera todos as utiliza??es gastas da sua Inspira??o de Bardo quando voc? termina um descanso curto ou longo.\n\n", 5));
+		super.habilidadesAdd(new Habilidade("Can??o de prote??o", "\tNo 6? n?vel, voc? adquire a habilidade de usar notas musicais ou palavras de poder para interromper efeito de influ?ncia mental. Com uma a??o, voc? pode come?ar uma atua??o que dura at? o fim do seu pr?ximo turno. Durante esse tempo, voc? e qualquer criatura amig?vel a at? 9 metros de voc? ter? vantagem em testes de resist?ncia para n?o ser amedrontado ou enfeiti?ado. Uma criatura deve ser capaz de ouvir voc? para receber esse benef?cio. A atua??o termina prematuramente se voc? for incapacitado ou silenciado ou se voc? termin?-la voluntariamente (n?o requer a??o).\n\n", 6));
+		super.habilidadesAdd(new Habilidade("Segredos m?gicos", "\tNo 10? n?vel, voc? usurpou conhecimento m?gico de um vasto espectro de disciplinas. Escolha duas magias de qualquer classe, incluindo essa. A magia que voc? escolher deve ser de um n?vel que voc? possa conjurar, como mostrado na tabela O Bardo, ou um truque.\n" +
+				"\tAs magias escolhidas contam como magias de bardo para voc? e j? est?o inclu?das no n?mero da coluna Magias Conhecidas da tabela O Bardo.\n" +
+				"\tVoc? aprende duas magias adicionais de qualquer classe no 14? n?vel e novamente no 18? n?vel.\n\n", 10));
+		super.habilidadesAdd(new Habilidade("Inspira??o superior", "\tNo 20? n?vel, quando voc? rolar iniciativa e n?o tiver nenhum uso restante de Inspira??o de Bardo, voc? recupera um uso.\n\n", 20));
 	}
 
 	@Override
@@ -83,10 +82,7 @@ public class Bardo extends Classe implements Magica{
 	}
 
 	@Override
-	public void addMagiasAoBau(Personagem personagem) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void addMagiasAoBau(Personagem personagem) { }
 	
 	public Caminho<Bardo> getCaminho() {
 		return caminho;

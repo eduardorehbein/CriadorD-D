@@ -21,15 +21,10 @@ public class Paladino extends Classe implements Magica{
 	}
 
 	@Override
-	protected void setTabela() {
-		// TODO Auto-generated method stub
-		
-	}
+	protected void setTabela() {}
 	
 	@Override
-	public void setEquipamentoInicial(Personagem personagem) {
-		// TODO Auto-generated method stub
-	}
+	public void setEquipamentoInicial(Personagem personagem) {}
 
 	@Override
 	protected void setPvInicial(Personagem personagem) {
@@ -48,6 +43,7 @@ public class Paladino extends Classe implements Magica{
 
 	@Override
 	protected void setHabilidades() {
+		//TODO: Extrair strings para um XML
 		super.habilidadesAdd(new Habilidade("Sentido divino", "\tA presença de um mal poderoso é registrada nos seus sentidos como um odor nocivo e o bem poderoso badala como música celestial nos seus ouvidos. Com uma ação, você pode expandir sua consciência para detectar tais forças. Até o final do seu próximo turno, você sabe a localização de qualquer celestial, corruptor ou morto-vivo a 18 metros de você que não esteja com cobertura total. Você sabe o tipo (celestial, corruptor ou morto-vivo) de qualquer ser cuja presença você sentiu, mas não sua identidade (o vampiro Conde Strahd von Zarovish, por exemplo). Dentro do mesmo raio, você também detecta a presença de qualquer lugar ou objeto que tenha sido consagrado ou conspurcado, como pela magia consagrar.\n" +
 				"\tVocê pode usar essa característica um número de vezes igual a 1 + seu modificador de Carisma. Quando você concluir um descanso longo, você recupera todos os usos gastos.\n\n", 1));
 		super.habilidadesAdd(new Habilidade("Cura pelas mãos", "\tSeu toque abençoado pode curar ferimentos. Você tem um poço de poder curativo que se enche quando você realiza um descanso longo. Com esse poço, você pode restaurar um número total de pontos de vida igual ao seu nível de paladino x 5.\n" +
@@ -92,10 +88,7 @@ public class Paladino extends Classe implements Magica{
 	}
 
 	@Override
-	public void addMagiasAoBau(Personagem personagem) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void addMagiasAoBau(Personagem personagem) {}
 
 	public Caminho<Paladino> getCaminho() {
 		return caminho;

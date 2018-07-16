@@ -14,15 +14,10 @@ public class Guerreiro extends Classe {
 	}
 
 	@Override
-	protected void setTabela() {
-		// TODO Auto-generated method stub
-		
-	}
+	protected void setTabela() {}
 	
 	@Override
-	public void setEquipamentoInicial(Personagem personagem) {
-		// TODO Auto-generated method stub		
-	}
+	public void setEquipamentoInicial(Personagem personagem) {}
 
 	@Override
 	protected void setPvInicial(Personagem personagem) {
@@ -41,6 +36,7 @@ public class Guerreiro extends Classe {
 
 	@Override
 	protected void setHabilidades() {
+		//TODO: Extrair strings para um XML
 		super.habilidadesAdd(new Habilidade("Estilo de luta", "\tVocê adota um estilo de combate particular que será sua especialidade. Escolha uma das opções a seguir. Você não pode escolher o mesmo Estilo de Combate mais de uma vez, mesmo se puder escolher de novo.\n" +
 				"\tArquearia: Você ganha +2 de bônus nas jogadas de ataque realizadas com uma arma de ataque à distância.\n" +
 				"\tCombate com Armas Grandes: Quando você rolar um 1 ou um 2 num dado de dano de um ataque com arma corpo-a-corpo que você esteja empunhando com duas mãos, você pode rolar o dado novamente e usar a nova rolagem, mesmo que resulte em 1 ou 2. A arma deve ter a propriedade duas mãos ou versátil para ganhar esse benefício.\n" +
